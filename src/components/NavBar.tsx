@@ -1,6 +1,7 @@
 import { SearchInput } from "../types";
 import SearchBar from "./SearchBar";
 import { ArrowDownUp } from "lucide-react";
+import { Link } from "react-router";
 export default function NavBar({
   search,
   setSearch,
@@ -16,7 +17,7 @@ export default function NavBar({
       </h1>
       <div>
         <h1 className="text-2xl">
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </h1>
       </div>
       <h1 className="text-2xl">
@@ -38,7 +39,7 @@ export default function NavBar({
         <ArrowDownUp />
       </button>
       <h1 className="text-2xl">
-        <a href="#">Login</a>
+        <Link to="/LoginPage">Login</Link>
       </h1>
     </div>
   );

@@ -18,7 +18,7 @@ export default function Card({ item }: { item: CardProps }) {
   }
 
   return (
-    <div className="w-56 p-4 rounded-lg">
+    <div className="w-56 p-4 rounded-lg hover:scale-105">
       <img src={imgSrc} className="w-full h-72 object-cover" />
       <h2 className="text-lg font-bold truncate">{title}</h2>
       <SubDub hasDub={Boolean(hasDub)} hasSub={Boolean(hasSub)} />

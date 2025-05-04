@@ -1,22 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import AnimeList from "./components/AnimeList";
-import NavBar from "./components/NavBar";
-import { animes } from "./data/animes";
-
+import HomePage from "./pages/HomePage";
+import { HashRouter as Router, Routes, Route } from "react-router";
+import Login from "./pages/Login";
 function App() {
-  const [search, setSearch] = useState("");
-  const [sort, setSort] = useState("asc"); // "asc" or "desc"
   return (
-    <div className="bg-neutral-950 text-white min-h-screen">
-      <NavBar
-        search={search}
-        setSearch={setSearch}
-        sort={sort}
-        setSort={setSort}
-      />
-      <AnimeList search={search} animes={animes} sort={sort} />
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/LoginPage" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
