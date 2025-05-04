@@ -53,7 +53,7 @@ export default function Login() {
           <div className="flex flex-col justify-center items-center mt-5">
             <Link
               className="underline  hover:text-purple-600/30 hover:font-extrabold"
-              to="/ResetPasswordPage"
+              to="/CantLoginPage"
             >
               Cant Login?
             </Link>

@@ -1,14 +1,15 @@
 import HomePage from "./pages/HomePage";
 import { HashRouter as Router, Routes, Route } from "react-router";
-import Login from "./pages/Login";
+import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
+import CantLoginPage from "./pages/CantLoginPage";
 function App() {
   return (
     <div>
       <Router>
         <Routes>
-          {" "}
-          <Route path="/LoginPage" element={<Login />} />
+          <Route path="/CantLoginPage" element={<CantLoginPage />} />
+          <Route path="/LoginPage" element={<LoginPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/SignUpPage" element={<SignUpPage />} />
         </Routes>
