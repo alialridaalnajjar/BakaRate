@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import { animes } from "../data/animes";
 export default function HomePage() {
   const [search, setSearch] = useState("");
-  const [sort, setSort] = useState("asc"); // "asc" or "desc"
+  const [sort, setSort] = useState("desc"); // "asc" or "desc"
   return (
     <div className="bg-neutral-950 text-white min-h-screen">
       <NavBar
