@@ -11,17 +11,17 @@ export default function NavBar({
   return (
     <div className="sticky top-0 flex flex-row justify-around items-center h-20 w-full bg-violet-500/20 bg-clip-padding backdrop-filter backdrop-blur-lg  ">
       <h1 className="text-4xl">
-        <a href="#">
+        <Link to="/HomePage">
           Baka<span className="text-purple-950">Rate</span>
-        </a>
+        </Link>
       </h1>
       <div>
         <h1 className="text-2xl">
-          <Link to="/">Home</Link>
+          <Link to="/HomePage">Home</Link>
         </h1>
       </div>
       <h1 className="text-2xl">
-        <a href="#">Anime</a>
+        <Link to="/HomePage">Anime</Link>
       </h1>
       <SearchBar
         search={search}
@@ -39,7 +39,7 @@ export default function NavBar({
         <ArrowDownUp />
       </button>
       <h1 className="text-2xl">
-        <Link to="/LoginPage">Login</Link>
+        <Link to="/">Profile</Link>
       </h1>
     </div>
   );
