@@ -21,7 +21,9 @@ export default function NavBar({
         </h1>
       </div>
       <h1 className="text-2xl">
-        <Link to="/HomePage">Anime</Link>
+        <a href="#">
+          <Link to="/HomePage">Anime</Link>
+        </a>
       </h1>
       <SearchBar
         search={search}

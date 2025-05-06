@@ -6,6 +6,7 @@ export type CardProps = {
   hasDub?: boolean;
   imgSrc: string;
   rate: number;
+  poster?: string;
 };
 
 export type SearchInput = {
