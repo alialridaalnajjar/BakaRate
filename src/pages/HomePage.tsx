@@ -26,7 +26,7 @@ export default function HomePage() {
       <div className=" bg-neutral-950" id="#" >
          <AnimeList search={search} animes={animes} sort={sort}  />
       </div>
-      <div className=" bottom-0  w mt-0 text-white" >
+      <div className=" bottom-0   mt-0 text-white" >
         <Footer/>
       </div>
     </div>

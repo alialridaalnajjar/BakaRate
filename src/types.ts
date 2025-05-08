@@ -8,6 +8,7 @@ export type CardProps = {
   rate: number;
   poster?: string;
   description?: string;
+  background?: string;
 };
 
 export type SearchInput = {

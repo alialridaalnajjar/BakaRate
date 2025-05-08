@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import img from "../assets/BakaRateLoginPng.png";
-import NavBar from "../components/NavBar";
 
-import { Link } from "react-router";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Link } from "react-router";
 export default function Login() {
   const [startDate, setStartDate] = useState<Date | null>(new Date());
-  const [search, setSearch] = useState("");
-  const [sort, setSort] = useState("asc");
+  
   return (
     <div
       className="h-screen bg-cover text-white flex flex-row justify-center items-center  "

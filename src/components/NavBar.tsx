@@ -2,6 +2,7 @@ import { SearchInput } from "../types";
 import SearchBar from "./SearchBar";
 import { ArrowDownUp } from "lucide-react";
 import { Link } from "react-router";
+import img from "../assets/Dark-Moon-Purple-HD-Wallpaper.jpg";
 export default function NavBar({
   search,
   setSearch,
@@ -10,7 +11,7 @@ export default function NavBar({
   setShowFeatured
 }: SearchInput) {
   return (
-    <div className=" top-0 flex flex-row justify-around items-center h-20 w-full bg-violet-900  bg-clip-padding backdrop-filter backdrop-blur-lg  ">
+    <div className=" top-0 flex flex-row justify-around items-center h-20 w-full  bg-clip-padding backdrop-filter backdrop-blur-lg  " style={{ backgroundImage: `url(${img})`  }}>
       <h1 className="text-4xl">
         <Link to="/HomePage">
           Baka<span className="text-purple-950">Rate</span>
