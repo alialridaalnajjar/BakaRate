@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CardProps } from "../types";
 import Card from "./Card";
-
+import img from "../assets/403b8268939393bbd01dfc13e348e645.jpg";
 import Reject from ".//Reject";
 
 export default function AnimeList({
@@ -33,7 +33,7 @@ export default function AnimeList({
 
   return (
     <div
-      className={`flex flex-row justify-center items-center gap-8 text-white flex-wrap`}
+      className="flex flex-row justify-center items-center gap-8 text-white flex-wrap "style={{ backgroundImage: `url(${img})`  }}
     >
       {sortedAnimes.length == 0 && <Reject search={search} />}
       {sortedAnimes.map((anime) => (

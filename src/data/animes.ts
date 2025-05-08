@@ -8,6 +8,7 @@ export const animes: CardProps[] = [
     hasDub: true,
     hasSub: true,
     rate: 5,
+    description: " one of the best anime of all time",
   },
   {
     title: "Demon Slayer",
@@ -187,4 +188,28 @@ export const animes: CardProps[] = [
     hasSub: true,
     rate: 3.5,
   },
+  {
+    title: "Chainsaw Man",
+    imgSrc: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQca_UcolyMHyAOVdBLnAgiTlwNQXmBbByjXctsjwL8dn3qb0mUI5JMiXlsGtQ_T-MUT-8E5g",
+    hasDub: true,
+    hasSub: true,
+    rate: 4.5,
+  },
+  {
+    title: "Astra Lost In Space",
+    imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGO9Gd6mjv2cBXK4Ek1XE2S6OQ1oUJhWjMVg&s",
+    hasDub: true,
+    hasSub: true,
+    rate: 4.5,
+  },
+  {
+    title: "Death Billiards",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BMjVjZDg1OGYtNmFhMS00MzY0LTkwOTAtZjEwYzgxYWQ2NjhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+
+    hasSub: true,
+    hasDub: true,
+    rate: 4.0,
+  },
+
 ];

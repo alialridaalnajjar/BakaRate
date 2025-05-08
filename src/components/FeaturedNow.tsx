@@ -3,7 +3,7 @@ import { CardProps } from "../types";
 import Card from "./Card";
 import img from "../assets/sololevelingimg.jpg";
 interface FeaturedNowProps {
-  animes: CardProps[]; // Expect an array of Anime objects
+  animes: CardProps[]; 
 }
 
 export default function FeaturedNow({ animes }: FeaturedNowProps) {
@@ -22,7 +22,7 @@ export default function FeaturedNow({ animes }: FeaturedNowProps) {
         <source src={vid} type="video/mp4" />
       </video>
       <div className="flex flex-row justify-center items-center">
-        <div className=" mt-35">
+        <div className=" mt-30 mb-30">
           <h1 className="text-2xl font-semibold  ml-2 mb-2">Featured Now</h1>
 
           <div className=" h-138 w-240 rounded-3xl flex flex-row justify-end  bg-violet-500/20  backdrop-blur-lg object-fit  mask-r-to-violet-500/60  ">

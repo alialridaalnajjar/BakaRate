@@ -7,9 +7,10 @@ export default function NavBar({
   setSearch,
   sort,
   setSort,
+  setShowFeatured
 }: SearchInput) {
   return (
-    <div className="sticky top-0 flex flex-row justify-around items-center h-20 w-full bg-violet-500/20 bg-clip-padding backdrop-filter backdrop-blur-lg  ">
+    <div className=" top-0 flex flex-row justify-around items-center h-20 w-full bg-violet-900  bg-clip-padding backdrop-filter backdrop-blur-lg  ">
       <h1 className="text-4xl">
         <Link to="/HomePage">
           Baka<span className="text-purple-950">Rate</span>
@@ -30,6 +31,7 @@ export default function NavBar({
         setSearch={setSearch}
         setSort={setSort}
         sort={sort}
+        setShowFeatured={setShowFeatured}
       />
       <button
         className="p-4 hover:text- hover:scale-110 transition-all duration-300 ease-in-out bg-transparent"
@@ -38,7 +40,8 @@ export default function NavBar({
           setSort(sort == "asc" ? "desc" : "asc");
         }}
       >
-        <ArrowDownUp />
+       
+        <ArrowDownUp className="hover:cursor-pointer" />
       </button>
       <h1 className="text-2xl">
         <Link to="/">Profile</Link>

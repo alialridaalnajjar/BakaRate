@@ -1,20 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import img from "../assets/BakaRateLoginPng.png";
-import NavBar from "../components/NavBar";
-import { Link, useNavigate } from "react-router";
 import RejectLogin from "../components/RejectLogin";
+
 export default function Login() {
-  const [search, setSearch] = useState("");
-  const [sort, setSort] = useState("asc");
   const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
   const [reject, setReject] = useState(false);
   const navigate = useNavigate();
+  const passwordInputRef = useRef<HTMLInputElement>(null); // AL !?  
+
   const loginCheck = () => {
-    if (password === "123" && userName == "123") {
+    if (password.trim() === "123" && userName.trim() === "123") {
       navigate("/HomePage");
       setReject(false);
-    } else setReject(true);
+    } else {
+      setReject(true);
+    }
+  };
+//AL ?
+  const handleKeyDownUsername = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      passwordInputRef.current?.focus();
+      e.preventDefault();
+    }
+  };
+//AL ?
+  const handleKeyDownPassword = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      loginCheck();
+    }
   };
 
   return (
@@ -40,17 +55,21 @@ export default function Login() {
               className="   bg-purple-600/2  w-60  h-9 rounded-lg border-black border p-1 hover:border-white "
               placeholder="Enter your username"
               onChange={(e) => setUserName(e.target.value)}
+              onKeyDown={handleKeyDownUsername}
             />
           </div>
           <div>
             <h1>Password</h1>
             <input
-              className="  bg-purple-600/2  w-60  h-9 rounded-lg border-black border p-1 hover:border-white"
+              ref={passwordInputRef}
+              className="   bg-purple-600/2  w-60  h-9 rounded-lg border-black border p-1 hover:border-white"
               placeholder="Enter your password"
               onChange={(e) => setPassword(e.target.value)}
-            />{" "}
-            <div className="absolute">
-              {reject === true ? <RejectLogin /> : null}
+
+              onKeyDown={handleKeyDownPassword}
+            />
+            <div className="absolute top-full mt-2">
+              {reject && <RejectLogin />}
             </div>
           </div>
 

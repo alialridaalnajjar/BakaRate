@@ -1,10 +1,7 @@
-import React from "react";
-import { Link } from "react-router";
 import { Send } from "lucide-react";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { LuInstagram } from "react-icons/lu";
-import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router";
 export default function Footer() {
   return (
     <div className="flex flex-col justify-center bg-black  pt-6.5">

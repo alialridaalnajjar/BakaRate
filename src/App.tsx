@@ -13,7 +13,7 @@ function App() {
           <Route path="/" element={<LoginPage />} />
           <Route path="/HomePage" element={<HomePage />} />
           <Route path="/SignUpPage" element={<SignUpPage />} />
-          <Route path="/AnimePage" element={<AnimePage />} />
+          <Route path="/AnimePage/:title" element={<AnimePage />} />
         </Routes>
       </Router>
     </div>
