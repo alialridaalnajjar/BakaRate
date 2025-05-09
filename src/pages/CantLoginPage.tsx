@@ -1,9 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router";
 import img from "../assets/BakaRateLoginPng.png";
 export default function CantLoginPage() {
-  const [search, setSearch] = useState("");
-  const [sort, setSort] = useState("asc");
+  
   return (
     <div
       className="h-screen bg-cover text-white flex flex-row justify-center items-center  "

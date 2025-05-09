@@ -9,6 +9,8 @@ export type CardProps = {
   poster?: string;
   description?: string;
   background?: string;
+  trailer?: string;
+  frame?: string;
 };
 
 export type SearchInput = {

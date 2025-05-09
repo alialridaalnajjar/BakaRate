@@ -8,18 +8,28 @@ export const animes: CardProps[] = [
     hasDub: true,
     hasSub: true,
     rate: 5,
-    description: "The story begins with Japan's elimination from the 2018 FIFA World Cup, which prompts the Japanese Football Union to start a programme scouting high school players who will begin training in preparation for the 2022 Cup. Isagi Youichi, a forward, receives an invitation to this programme soon after his team loses the chance to go to Nationals because he passed to his less-skilled teammate —who missed— without trying to make the game-changing goal by himself. Their coach will be Ego Jinpachi, who intends to destroy Japanese loser football by introducing a radical new training regimen: isolate 300 young strikers in a prison-like institution called Blue Lock and put them through rigorous training aimed at creating the world's greatest egotist striker "
-  }, {
-    title: "Demon Slayer",
-    imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKuuSGSkL_DKOFclSG0LOZpqeYJMlbwRsy6Q&s",
+    description:
+      "The story begins with Japan's elimination from the 2018 FIFA World Cup, which prompts the Japanese Football Union to start a programme scouting high school players who will begin training in preparation for the 2022 Cup. Isagi Youichi, a forward, receives an invitation to this programme soon after his team loses the chance to go to Nationals because he passed to his less-skilled teammate —who missed— without trying to make the game-changing goal by himself. Their coach will be Ego Jinpachi, who intends to destroy Japanese loser football by introducing a radical new training regimen: isolate 300 young strikers in a prison-like institution called Blue Lock and put them through rigorous training aimed at creating the world's greatest egotist striker ",
+    background: "https://images7.alphacoders.com/131/1319752.jpeg",
+    trailer: "https://www.youtube.com/watch?v=QAlsuW5EXUg",
+    frame: "https://www.youtube.com/embed/QAlsuW5EXUg",
+  },
+  {
+    title: "Demon Slayer" ,
+    imgSrc:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKuuSGSkL_DKOFclSG0LOZpqeYJMlbwRsy6Q&s",
     hasSub: true,
     rate: 5,
     description:
       "Tanjiro Kamado becomes a demon slayer after his family is slaughtered by demons, leaving only his sister Nezuko alive—though turned into a demon herself. Vowing to find a cure for her, he joins the Demon Slayer Corps and trains to battle powerful demons while uncovering secrets about his family’s past and the origins of demonkind.",
-  },
+ background:"https://wallpapers.com/images/featured/demon-slayer-4k-pictures-5v5lz47uso2tx2kr.jpg",
+trailer:"https://youtu.be/VQGCKyvzIM4?si=caRtBwHi0f6oQ14l ",
+frame:"https://www.youtube.com/embed/VQGCKyvzIM4?si=caRtBwHi0f6oQ14l"    
+},
   {
     title: "Sakamoto Days",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BM2MwZDRmYWItNGIzZC00ZWExLWEwNWYtNmM1ZmU3OTA3NmY4XkEyXkFqcGc@._V1_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BM2MwZDRmYWItNGIzZC00ZWExLWEwNWYtNmM1ZmU3OTA3NmY4XkEyXkFqcGc@._V1_.jpg",
     hasSub: true,
     hasDub: true,
     rate: 3.5,
@@ -28,24 +38,31 @@ export const animes: CardProps[] = [
   },
   {
     title: "Death Note",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     hasSub: true,
     hasDub: true,
     rate: 4.5,
     description:
       "Light Yagami, a genius high school student, finds a supernatural notebook that allows him to kill anyone by writing their name. Believing himself a god of justice, he begins purging criminals—until the enigmatic detective L challenges him in a high-stakes battle of wits, blurring the line between good and evil.",
-  },{
+  },
+  {
     title: "Solo leveling",
     imgSrc:
       "https://m.media-amazon.com/images/M/MV5BODExNjI5ODgtMTE3Yy00YjRkLWE1OGQtMjdmN2YzNDYzMWM3XkEyXkFqcGc@._V1_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 5,
-    description: "In a world where hunters with supernatural abilities fight deadly monsters, the weakest hunter, E-rank Sung Jin-Woo, is given a second chance at life after a near-death experience. He gains the ability to level up and become stronger, embarking on a journey to become the world's strongest hunter while uncovering dark secrets about the dungeons and the monsters within them."
+    trailer: "https://www.youtube.com/watch?v=YvGSK8mIlt8&t=39s",
+    description:
+      "In a world where hunters with supernatural abilities fight deadly monsters, the weakest hunter, E-rank Sung Jin-Woo, is given a second chance at life after a near-death experience. He gains the ability to level up and become stronger, embarking on a journey to become the world's strongest hunter while uncovering dark secrets about the dungeons and the monsters within them.",
+    background: "https://images6.alphacoders.com/132/thumb-1920-1320541.png",
+    frame: "https://www.youtube.com/embed/YvGSK8mIlt8",
   },
   {
     title: "Monster",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BOWY4NDkyNzktNjViNy00NmMxLTliYmMtZWJkNDM4YzEzNzA4XkEyXkFqcGc@._V1_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BOWY4NDkyNzktNjViNy00NmMxLTliYmMtZWJkNDM4YzEzNzA4XkEyXkFqcGc@._V1_.jpg",
     hasSub: true,
     hasDub: true,
     rate: 4.5,
@@ -54,24 +71,35 @@ export const animes: CardProps[] = [
   },
   {
     title: "Mashle",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BMjMyNjg4MzItMGI3MS00MGVmLWE5MDMtODk4NjIyNzFlOWZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BMjMyNjg4MzItMGI3MS00MGVmLWE5MDMtODk4NjIyNzFlOWZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     hasSub: true,
     hasDub: true,
     rate: 5,
     description:
       "In a world where magic defines social status, Mash Burnedead—a muscle-bound, magicless boy—relies on sheer physical strength to survive. When forced to enroll in a prestigious magic academy, he must punch his way through every challenge to prove that muscles can overpower spells in this hilarious and action-packed underdog story.",
+    background:
+      "https://m.media-amazon.com/images/S/pv-target-images/427852ab1fa3a168109f9a632054142e464c7da058f41a81717699b376a8f48d.jpg",
+    trailer: "https://youtu.be/Al0Zin6iVCE?si=0F3MFCNShOEbzIIM",
+    frame: "https://www.youtube.com/embed/Al0Zin6iVCE?si=0F3MFCNShOEbzIIM",
   },
   {
     title: "Black Clover",
-    imgSrc: "https://upload.wikimedia.org/wikipedia/en/6/69/Black_Clover%2C_volume_1.jpg",
+    imgSrc:
+      "https://upload.wikimedia.org/wikipedia/en/6/69/Black_Clover%2C_volume_1.jpg",
     hasSub: true,
     rate: 5,
     description:
       "Asta, a boy born without magic in a world where it determines everything, dreams of becoming the Wizard King. When he gains a rare anti-magic grimoire, he and his rival Yuno set out to prove their strength, joining the Magic Knights and facing powerful foes while uncovering secrets about their past and the kingdom’s corruption.",
+    background:
+      "https://wallpapers.com/images/hd/asta-black-clover-4k-outcast-rage-manga-anime-woohxzrmp0krawod.jpg",
+    trailer: "https://youtu.be/Wipd9hjjyp8?si=vItRHARzvhGfe26X",
+    frame: "https://www.youtube.com/embed/Wipd9hjjyp8?si=vItRHARzvhGfe26X",
   },
   {
     title: "Attack On Titan",
-    imgSrc: "https://www.danimeshop.com/cdn/shop/products/Attack-on-Titan-Posters-Japanese-Anime-kraft-Paper-Prints-Clear-Image-room-Bar-Home-Art-painting_a750acb1-009a-4f85-8592-d65ce067ee21.jpg?v=1588259443",
+    imgSrc:
+      "https://www.danimeshop.com/cdn/shop/products/Attack-on-Titan-Posters-Japanese-Anime-kraft-Paper-Prints-Clear-Image-room-Bar-Home-Art-painting_a750acb1-009a-4f85-8592-d65ce067ee21.jpg?v=1588259443",
     hasDub: true,
     hasSub: true,
     rate: 4.5,
@@ -80,7 +108,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Psycho Pass",
-    imgSrc: "https://upload.wikimedia.org/wikipedia/en/8/88/Psycho-Pass_key_visual.png",
+    imgSrc:
+      "https://upload.wikimedia.org/wikipedia/en/8/88/Psycho-Pass_key_visual.png",
     hasDub: true,
     hasSub: true,
     rate: 4.5,
@@ -89,16 +118,21 @@ export const animes: CardProps[] = [
   },
   {
     title: "The Eminence In Shadow",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BMDFmMWJlMWYtMDFkNi00OWViLTkzOGEtNDI0YWNmM2M5MzI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BMDFmMWJlMWYtMDFkNi00OWViLTkzOGEtNDI0YWNmM2M5MzI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 5,
     description:
       "Cid Kagenou, obsessed with becoming a shadowy mastermind, reincarnates in a fantasy world and creates a fake evil organization to battle—only to discover it’s actually real. Playing both hero and villain, he unknowingly shapes the worlds fate while chasing his delusional dream of being the ultimate background character.",
-  },
+  background:"https://images6.alphacoders.com/130/1303873.png",
+  trailer:"https://youtu.be/L7LgAbGF-WY?si=r3LO8t7-27y9NZQz",
+  frame:"https://www.youtube.com/embed/L7LgAbGF-WY?si=r3LO8t7-27y9NZQz"
+    },
   {
     title: "Mushoku Tensei",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BYWQwNjk3MDItNDAxMS00YTQ2LWEyNDctMGYyZTE5OGQxNGQ1XkEyXkFqcGc@._V1_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BYWQwNjk3MDItNDAxMS00YTQ2LWEyNDctMGYyZTE5OGQxNGQ1XkEyXkFqcGc@._V1_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 5,
@@ -107,7 +141,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Hell's Paradise",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BZjhmMjhkNjUtMGU2MC00N2IzLTg1YzItZDk5ODMxMDYxODc0XkEyXkFqcGc@._V1_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BZjhmMjhkNjUtMGU2MC00N2IzLTg1YzItZDk5ODMxMDYxODc0XkEyXkFqcGc@._V1_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 4.5,
@@ -116,7 +151,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Kaiju No8",
-    imgSrc: "https://m.media-amazon.com/images/I/81fSBDeWAPL._AC_UF894,1000_QL80_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/I/81fSBDeWAPL._AC_UF894,1000_QL80_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 4.5,
@@ -125,7 +161,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Ninja Kamui",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BMDM2MzJjZWEtYjI1Yy00ZGFmLTk1YmItZjgxNDdlOGE5ZmU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BMDM2MzJjZWEtYjI1Yy00ZGFmLTk1YmItZjgxNDdlOGE5ZmU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 2.5,
@@ -134,7 +171,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "The Fable",
-    imgSrc: "https://image.tmdb.org/t/p/original/aQeVABaQ7gZedtmtDRwhrgOQwgq.jpg",
+    imgSrc:
+      "https://image.tmdb.org/t/p/original/aQeVABaQ7gZedtmtDRwhrgOQwgq.jpg",
     hasDub: true,
     hasSub: true,
     rate: 4,
@@ -143,7 +181,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Tokyo Ghoul",
-    imgSrc: "https://i.pinimg.com/736x/bb/d5/9b/bbd59b6cbfb0d1a2a1b64da1accd76a8.jpg",
+    imgSrc:
+      "https://i.pinimg.com/736x/bb/d5/9b/bbd59b6cbfb0d1a2a1b64da1accd76a8.jpg",
     hasDub: true,
     hasSub: true,
     rate: 3.5,
@@ -152,7 +191,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Jujutsu Kaisen",
-    imgSrc: "https://m.media-amazon.com/images/I/71esFqJZhSL._AC_UF1000,1000_QL80_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/I/71esFqJZhSL._AC_UF1000,1000_QL80_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 0.5,
@@ -161,7 +201,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "High Card",
-    imgSrc: "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2023/12/high-card-season-2-updated-visual-1.jpg?resize=350%2C495&ssl=1",
+    imgSrc:
+      "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2023/12/high-card-season-2-updated-visual-1.jpg?resize=350%2C495&ssl=1",
     hasDub: true,
     hasSub: true,
     rate: 2.5,
@@ -170,7 +211,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Chillin In My 30s After Getting Fired",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BNjUwMGRiNTYtYzQxZi00MWViLWEyMzctMDlhMTJkMGEzYmM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BNjUwMGRiNTYtYzQxZi00MWViLWEyMzctMDlhMTJkMGEzYmM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 3.5,
@@ -179,7 +221,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Darwin's Game",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BNDRmMGI4NjYtYjFkYi00NTBlLWI0YmEtMThmMjU2ZDI2MWNkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BNDRmMGI4NjYtYjFkYi00NTBlLWI0YmEtMThmMjU2ZDI2MWNkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 2,
@@ -188,7 +231,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Koroshi Ai",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BMGIyNTQzODctZjI2ZC00MzU5LTg3NTUtYmVlOGJjYjM5OGRlXkEyXkFqcGc@._V1_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BMGIyNTQzODctZjI2ZC00MzU5LTg3NTUtYmVlOGJjYjM5OGRlXkEyXkFqcGc@._V1_.jpg",
     hasDub: true,
     hasSub: true,
     rate: 3.5,
@@ -206,7 +250,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Chainsaw Man",
-    imgSrc: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQca_UcolyMHyAOVdBLnAgiTlwNQXmBbByjXctsjwL8dn3qb0mUI5JMiXlsGtQ_T-MUT-8E5g",
+    imgSrc:
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQca_UcolyMHyAOVdBLnAgiTlwNQXmBbByjXctsjwL8dn3qb0mUI5JMiXlsGtQ_T-MUT-8E5g",
     hasDub: true,
     hasSub: true,
     rate: 4.5,
@@ -215,7 +260,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Astra Lost In Space",
-    imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGO9Gd6mjv2cBXK4Ek1XE2S6OQ1oUJhWjMVg&s",
+    imgSrc:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGO9Gd6mjv2cBXK4Ek1XE2S6OQ1oUJhWjMVg&s",
     hasDub: true,
     hasSub: true,
     rate: 4.5,
@@ -224,7 +270,8 @@ export const animes: CardProps[] = [
   },
   {
     title: "Death Billiards",
-    imgSrc: "https://m.media-amazon.com/images/M/MV5BMjVjZDg1OGYtNmFhMS00MzY0LTkwOTAtZjEwYzgxYWQ2NjhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BMjVjZDg1OGYtNmFhMS00MzY0LTkwOTAtZjEwYzgxYWQ2NjhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     hasSub: true,
     hasDub: true,
     rate: 4.0,

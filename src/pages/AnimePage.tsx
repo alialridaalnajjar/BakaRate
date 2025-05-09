@@ -17,12 +17,14 @@ export default function AnimePage() {
   );
 
   return (
-    <div className=" text-white min-h-screen bg-black pt-2">
-      
-      <h1 className="text-4xl font-bold mb-4 p-6 pr-2 pb-2 ">
+    <div
+      className=" text-white min-h-screen bg-black pt-2"
+      style={{ backgroundImage: `url(${anime?.background})` }}
+    >
+      <h1 className="text-4xl font-bold mb-4 p-6 pr-2 pb-2 text-black ">
         {animeNameFromUrl.toUpperCase()}
       </h1>
-      <div className=" ml-20 flex flex-row justify-around items-center">
+      <div className="  flex flex-row justify-around items-center">
         <div>
           <Card
             item={{
@@ -33,38 +35,51 @@ export default function AnimePage() {
               rate: anime?.rate || 0,
             }}
           />
+
           <div className="flex flex-row gap-4 mt-4 ">
             <button className="bg-red-800 rounded-3xl p-0.5 w-30 hover:cursor-pointer hover:scale-103 shadow-2xl shadow-black">
               Watch Now
             </button>
-            <button className="bg-red-800 rounded-3xl p-0.5 w-20 hover:cursor-pointer  hover:scale-103 shadow-2xl shadow-black">
-              {" "}
-              Trailer{" "}
-            </button>
+            <a href={anime?.trailer}>
+              <button className="bg-red-800 rounded-3xl p-0.5 w-20 hover:cursor-pointer  hover:scale-103 shadow-2xl shadow-black ">
+                {" "}
+                Trailer{" "}
+              </button>
+            </a>
           </div>
         </div>
-        <div className="  w-100 font-semilight text-justify text-lg ">
-          
-      <h1 className="text-3xl font-bold mb-4">
-        {animeNameFromUrl.toUpperCase()}
-      </h1>
-          <p className="">{anime?.description}</p>{" "}
+        <div className=" flex flex-col justify-center items-center mb-10">
+          <iframe
+            src={anime?.frame}
+            className="rounded-2xl"
+            style={{ width: "600px", height: "350px" }}
+          ></iframe>
+        </div>
+        <div className="  w-100 font-semilight text-justify text-lg   ">
+          <h1 className="text-3xl font-bold mb-4  ">
+            {animeNameFromUrl.toUpperCase()}
+          </h1>
+          <p className=" shadow-2xl shadow-black rounded-2xl p-5">
+            {anime?.description}
+          </p>{" "}
         </div>
       </div>
-            {/*<section className="flex flex-row justify-center items-center gap-4  bg-red-700 mt-20">
+      {/*<section className="flex flex-row justify-center items-center gap-4  bg-red-700 mt-20">
             <div className="w-30 h-30">2</div>
             <div className="w-30 h-30">2</div>
             <div className="w-30 h-30">2</div></section>*/}
 
       <Link
         to="/HomePage"
-        className="inline-block mt-8 text-purple-500 hover:underline m-10"
+        className="inline-block mt-8 text-black hover:underline m-10 rounded-2xl p-2 font-semibold scale-105 hover:scale-110 transition-transform duration-300"
       >
         Back to Home
       </Link>
-      <div className=" bottom-0 mt-0 w-full rounded-3xl" >
+
+      <div>Watch more ----</div>
+      <div className=" bottom-0 mt-0 w-full rounded-3xl">
         <Footer />
-      </div></div>
- 
+      </div>
+    </div>
   );
 }
