@@ -4,11 +4,13 @@ import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import CantLoginPage from "./pages/CantLoginPage";
 import AnimePage from "./pages/AnimePage";
+import Profile from "./pages/Profile";
 function App() {
   return (
     <div>
       <Router>
         <Routes>
+          <Route path="/Profile" element={<Profile />} />
           <Route path="/CantLoginPage" element={<CantLoginPage />} />
           <Route path="/" element={<LoginPage />} />
           <Route path="/HomePage" element={<HomePage />} />

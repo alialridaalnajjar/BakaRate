@@ -45,7 +45,7 @@ export default function NavBar({
         <ArrowDownUp className="hover:cursor-pointer" />
       </button>
       <h1 className="text-2xl">
-        <Link to="/">Profile</Link>
+        <Link to="/Profile">Profile</Link>
       </h1>
     </div>
   );

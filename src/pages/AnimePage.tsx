@@ -2,7 +2,8 @@ import { Link, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import { animes } from "../data/animes"; // Ensure your anime data includes a 'description' field
 import Card from "../components/Card";
-
+import { HeartPlus } from "lucide-react";
+import { useState } from "react";
 export default function AnimePage() {
   const { title } = useParams(); // Get the 'titll' parameter from the URLLLLLLL
   // Function to make the title URL-friendly (for matching with data if needed)
@@ -16,6 +17,10 @@ export default function AnimePage() {
     (anime) => anime.title.toLowerCase() === animeNameFromUrl
   );
 
+  const [favorite, setFavorite] = useState(false);
+  const handleFavoriteClick = () => {
+    setFavorite(!favorite);
+  };
   return (
     <div
       className=" text-white min-h-screen bg-black pt-2"
@@ -46,6 +51,17 @@ export default function AnimePage() {
                 Trailer{" "}
               </button>
             </a>
+
+            <div
+              className="bg-red-800 rounded-4xl flex flex-row p-0.5 hover:cursor-pointer hover:scale-103 shadow-2xl shadow-black"
+              onClick={handleFavoriteClick}
+            >
+              {favorite ? (
+                <HeartPlus className="hover:cursor-pointer hover:scale-105" />
+              ) : (
+                <HeartPlus className="hover:cursor-pointer hover:scale-105 text-black" />
+              )}
+            </div>
           </div>
         </div>
         <div className=" flex flex-col justify-center items-center mb-10">
@@ -77,7 +93,7 @@ export default function AnimePage() {
       </Link>
 
       <div>Watch more ----</div>
-      <div className=" bottom-0 mt-0 w-full rounded-3xl">
+      <div className="   gap-4  w-full h-full mt-12">
         <Footer />
       </div>
     </div>

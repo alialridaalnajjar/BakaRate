@@ -19,6 +19,7 @@ export type SearchInput = {
   sort: string;
   setSort: Dispatch<SetStateAction<string>>;
   setShowFeatured: Dispatch<SetStateAction<boolean>>;
+  userName?: string;
 };
 export type ShowFeatured = {
   show: boolean;

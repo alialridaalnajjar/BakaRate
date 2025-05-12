@@ -43,6 +43,9 @@ frame:"https://www.youtube.com/embed/VQGCKyvzIM4?si=caRtBwHi0f6oQ14l"
     hasSub: true,
     hasDub: true,
     rate: 4.5,
+    background:"https://m.gettywallpapers.com/wp-content/uploads/2024/06/L-Death-Note-Background-HD-scaled.jpg",
+    frame:"https://www.youtube.com/embed/kNyR46eHDxE?si=WXxlPIz73JEWInq0",
+    trailer:"https://youtu.be/kNyR46eHDxE?si=WXxlPIz73JEWInq0",
     description:
       "Light Yagami, a genius high school student, finds a supernatural notebook that allows him to kill anyone by writing their name. Believing himself a god of justice, he begins purging criminals—until the enigmatic detective L challenges him in a high-stakes battle of wits, blurring the line between good and evil.",
   },
@@ -66,6 +69,9 @@ frame:"https://www.youtube.com/embed/VQGCKyvzIM4?si=caRtBwHi0f6oQ14l"
     hasSub: true,
     hasDub: true,
     rate: 4.5,
+    background:"https://i.imgur.com/ornCU.jpeg",
+    trailer:"https://youtu.be/9aS-EgdAq6U?si=y2hhInTR0wHPdwwb",
+    frame:"https://www.youtube.com/embed/9aS-EgdAq6U?si=y2hhInTR0wHPdwwb",
     description:
       "Brilliant neurosurgeon Kenzo Tenma risks his career to save a young boy over a politician, only to later discover the boy grew into a ruthless serial killer. Haunted by guilt, Tenma embarks on a relentless journey across Germany to stop the monster he saved, uncovering a dark conspiracy along the way.",
   },
@@ -103,6 +109,10 @@ frame:"https://www.youtube.com/embed/VQGCKyvzIM4?si=caRtBwHi0f6oQ14l"
     hasDub: true,
     hasSub: true,
     rate: 4.5,
+    background:
+      "https://wallpapercave.com/wp/wp1837539.jpg",
+      trailer:"https://youtu.be/3xNH23QkNpk?si=_etMLEGBpvCHMbpf",
+      frame:"https://www.youtube.com/embed/3xNH23QkNpk?si=_etMLEGBpvCHMbpf",
     description:
       "Humanity fights for survival behind massive walls protecting them from man-eating Titans. Eren Yeager joins the Survey Corps after his home is destroyed, vowing to eradicate the Titans—until he discovers horrifying truths about their origins and the world beyond the walls, leading to a brutal cycle of revenge and war.",
   },
@@ -135,7 +145,10 @@ frame:"https://www.youtube.com/embed/VQGCKyvzIM4?si=caRtBwHi0f6oQ14l"
       "https://m.media-amazon.com/images/M/MV5BYWQwNjk3MDItNDAxMS00YTQ2LWEyNDctMGYyZTE5OGQxNGQ1XkEyXkFqcGc@._V1_.jpg",
     hasDub: true,
     hasSub: true,
+    background:"https://images6.alphacoders.com/122/1222329.jpg",
     rate: 5,
+    trailer: "https://youtu.be/k5VxfJpzy1Q?si=UchBXzgqmxtOIj3u",
+    frame: "https://www.youtube.com/embed/k5VxfJpzy1Q?si=UchBXzgqmxtOIj3u",
     description:
       "A reclusive NEET gets a second chance at life when hes reincarnated in a magical world as Rudeus Greyrat. With his past memories intact, he trains in swordsmanship and magic, embarking on an epic journey of growth, redemption, and adventure while forming bonds that challenge his old self’s regrets.",
   },

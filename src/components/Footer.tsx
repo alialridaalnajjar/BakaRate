@@ -17,19 +17,19 @@ export default function Footer() {
         </div>
         <div className="flex flex-col justify-center items-center gap-3 pb-2 mb-2">
           <h1 className="font-bold">Explore</h1>
-          <Link to="/HomePage" className="underline">
+          <Link to="/HomePage" className="underline hover:text-violet-900">
             Homepage
           </Link>{" "}
-          <Link to="/HomePage" className="underline">
+          <Link to="/HomePage" className="underline hover:text-violet-900">
             All animes
           </Link>{" "}
-          <Link to="/HomePage" className="underline">
+          <Link to="/HomePage" className="underline hover:text-violet-900">
             Profile
           </Link>
         </div>
         <div className="font-bold">
           About us
-          <div className="font-extralight underline">
+          <div className="font-extralight underline hover:text-violet-900" >
             <a href="mailto:alialridaalnajjar@gmail.com?subject=Website Inquiry&body=Hello, I have a question about...">
               Email me
             </a>
@@ -38,25 +38,25 @@ export default function Footer() {
         <div className="flex flex-col justify-center items-center gap-4">
           <div>
             <h1>New settler</h1>
-            <div className="flex flex-row justify-center items-center border border-white rounded-lg p-1 ">
+            <div className="flex flex-row justify-center items-center border border-white rounded-lg p-1 hover:text-violet-900 hover:border-violet-900">
               <input placeholder="example@gmail.com" className="  " /> <Send />
             </div>
           </div>
           <div className="flex flex-row justify-around items-center gap-5 text-3xl ">
             <a href="https://www.instagram.com/g0at32/?__pwa=1">
               {" "}
-              <LuInstagram className="hover:scale-110" />
+              <LuInstagram className="hover:scale-110 hover:text-violet-900" />
             </a>
             <a href="https://www.linkedin.com/in/ali-al-najjar-88a801324/">
-              <FaLinkedin className="hover:scale-110" />
+              <FaLinkedin className="hover:scale-110 hover:text-violet-900"  />
             </a>
             <a href="https://github.com/alialridaalnajjar">
-              <FaGithub className="hover:scale-110" />
+              <FaGithub className="hover:scale-110 hover:text-violet-900/90" />
             </a>
           </div>
         </div>
       </div>
-      <div className="font-extralight text-xs text-center mb-5">
+      <div className="font-extralight text-xs text-center mb-5 " >
         © 2025 Ali Al Najjar - All Rights Reserved.
       </div>
     </div>

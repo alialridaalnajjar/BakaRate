@@ -48,7 +48,7 @@ export default function Login() {
             </h2>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-5 pt-2 mt-3">
+        <div className="flex flex-col justify-center items-center gap-5 pt-2">
           <div>
             <h1>Username</h1>
             <input
@@ -68,9 +68,10 @@ export default function Login() {
 
               onKeyDown={handleKeyDownPassword}
             />
-            <div className="absolute top-full mt-2">
+              <div className="  mt-2">
               {reject && <RejectLogin />}
             </div>
+          
           </div>
 
           <button
@@ -91,7 +92,7 @@ export default function Login() {
             Not a user yet?
             <Link
               to="/SignUpPage"
-              className="underline hover:text-purple-600/30 hover:font-extrabold"
+              className="underline hover:text-purple-600/30 hover:font-extrabold mb-5"
             >
               {" "}
               Sign Up
