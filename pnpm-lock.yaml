@@ -20,6 +20,9 @@ importers:
       flowbite-react:
         specifier: ^0.11.7
         version: 0.11.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tailwindcss@4.1.4)(typescript@5.7.3)
+      gh-pages:
+        specifier: ^6.3.0
+        version: 6.3.0
       lucide-react:
         specifier: ^0.506.0
         version: 0.506.0(react@19.1.0)
@@ -51,9 +54,6 @@ importers:
       '@eslint/js':
         specifier: ^9.22.0
         version: 9.25.1
-      '@types/node':
-        specifier: ^22.15.17
-        version: 22.15.17
       '@types/react':
         specifier: ^19.0.10
         version: 19.1.2
@@ -75,9 +75,6 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.4.19
         version: 0.4.20(eslint@9.25.1(jiti@2.4.2))
-      gh-pages:
-        specifier: ^6.3.0
-        version: 6.3.0
       globals:
         specifier: ^16.0.0
         version: 16.0.0
@@ -3461,6 +3458,7 @@ snapshots:
   '@types/node@22.15.17':
     dependencies:
       undici-types: 6.21.0
+    optional: true
 
   '@types/prop-types@15.7.14': {}
 
@@ -4499,7 +4497,8 @@ snapshots:
 
   typescript@5.7.3: {}
 
-  undici-types@6.21.0: {}
+  undici-types@6.21.0:
+    optional: true
 
   universalify@2.0.1: {}
 

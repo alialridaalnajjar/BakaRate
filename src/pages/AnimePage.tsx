@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
-import { animes } from "../data/animes"; // Ensure your anime data includes a 'description' field
+import { animes } from "../data/animes"; 
 import Card from "../components/Card";
 import { HeartPlus } from "lucide-react";
 import { useState } from "react";

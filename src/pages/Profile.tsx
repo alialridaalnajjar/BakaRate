@@ -1,4 +1,3 @@
-import React from "react";
 import img from "../assets/Dark-Moon-Purple-HD-Wallpaper.jpg";
 import { Link } from "react-router-dom";
 export default function Profile() {

@@ -1,14 +1,14 @@
-import HomePage from "./pages/HomePage";
-import { HashRouter as Router, Routes, Route } from "react-router";
-import LoginPage from "./pages/LoginPage";
-import SignUpPage from "./pages/SignUpPage";
-import CantLoginPage from "./pages/CantLoginPage";
+import { Route, Routes } from "react-router";
 import AnimePage from "./pages/AnimePage";
+import CantLoginPage from "./pages/CantLoginPage";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
 import Profile from "./pages/Profile";
+import SignUpPage from "./pages/SignUpPage";
 function App() {
   return (
     <div>
-      <Router>
+    
         <Routes>
           <Route path="/Profile" element={<Profile />} />
           <Route path="/CantLoginPage" element={<CantLoginPage />} />
@@ -17,7 +17,7 @@ function App() {
           <Route path="/SignUpPage" element={<SignUpPage />} />
           <Route path="/AnimePage/:title" element={<AnimePage />} />
         </Routes>
-      </Router>
+     
     </div>
   );
 }
