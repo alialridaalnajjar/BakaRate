@@ -6,11 +6,11 @@ import { animes } from "../data/animes";
 import FeaturedNow from "../components/FeaturedNow";
 export default function HomePage() {
   const [search, setSearch] = useState("");
-  const [sort, setSort] = useState("desc"); 
-  //show or unshow Featured based on search if on or off
- const [showFeatured, setShowFeatured] = useState(true); // true or false based on search
+  const [sort, setSort] = useState("desc");
+
+  const [showFeatured, setShowFeatured] = useState(true);
   return (
-    <div className=" text-white min-h-screen">
+    <div className=" text-white min-h-screen flex flex-col bg-black">
       <NavBar
         search={search}
         setSearch={setSearch}
@@ -19,16 +19,14 @@ export default function HomePage() {
         setShowFeatured={setShowFeatured}
       />
 
-      <div className="h-full   ">
+      <div className="flex-1   ">
         {showFeatured === true ? <FeaturedNow animes={animes} /> : null}
-        
-      </div>
-      <div className=" bg-neutral-950" id="#" >
-         <AnimeList search={search} animes={animes} sort={sort}  />
-      </div>
-      <div className=" bottom-0   mt-0 text-white" >
-        <Footer/>
-      </div>
+      
+      <div className=" bg-neutral-950" id="#">
+        <AnimeList search={search} animes={animes} sort={sort} />
+      </div></div>
+
+      <Footer />
     </div>
   );
 }
