@@ -11,6 +11,7 @@ export type CardProps = {
   background?: string;
   trailer?: string;
   frame?: string;
+  ft?: string;
 };
 
 export type SearchInput = {

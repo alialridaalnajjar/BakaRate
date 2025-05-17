@@ -10,7 +10,7 @@ export default function HomePage() {
 
   const [showFeatured, setShowFeatured] = useState(true);
   return (
-    <div className=" text-white min-h-screen flex flex-col bg-black">
+    <div className=" text-white min-h-screen flex flex-col">
       <NavBar
         search={search}
         setSearch={setSearch}
@@ -19,12 +19,13 @@ export default function HomePage() {
         setShowFeatured={setShowFeatured}
       />
 
-      <div className="flex-1   ">
+      <div className="flex-1 flex flex-col  text-black ">
         {showFeatured === true ? <FeaturedNow animes={animes} /> : null}
-      
-      <div className=" bg-neutral-950" id="#">
-        <AnimeList search={search} animes={animes} sort={sort} />
-      </div></div>
+
+        <div className=" bg-black flex-1" id="#">
+          <AnimeList search={search} animes={animes} sort={sort} />
+        </div>
+      </div>
 
       <Footer />
     </div>

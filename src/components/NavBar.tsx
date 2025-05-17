@@ -8,23 +8,30 @@ export default function NavBar({
   setSearch,
   sort,
   setSort,
-  setShowFeatured
+  setShowFeatured,
 }: SearchInput) {
   return (
-    <div className=" top-0 flex flex-row justify-around items-center h-20 w-full  bg-clip-padding backdrop-filter backdrop-blur-lg  " style={{ backgroundImage: `url(${img})`  }}>
-      <h1 className="text-4xl">
-        <Link to="/HomePage">
-          Baka<span className="text-purple-950">Rate</span>
+    <div
+      className=" top-0 flex flex-row justify-around items-center h-20 w-full  bg-clip-padding backdrop-filter backdrop-blur-lg  "
+      style={{ backgroundImage: `url(${img})` }}
+    >
+      <h1 className="text-4xl hover:scale-110 transition-all duration-300 ease-in-out bg-transparent">
+        <Link to="/HomePage"  onClick={() => setShowFeatured(true)}>
+          Baka<span className="text-purple-950 ">Rate</span>
         </Link>
       </h1>
       <div>
-        <h1 className="text-2xl">
-          <Link to="/HomePage">Home</Link>
+        <h1 className="text-2xl hover:cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out bg-transparent">
+          <Link to="/HomePage" onClick={() => setShowFeatured(true)}>
+            Home
+          </Link>
         </h1>
       </div>
-      <h1 className="text-2xl">
+      <h1 className="text-2xl hover:scale-110 transition-all duration-300 ease-in-out bg-transparent">
         <a href="#">
-          <Link to="/HomePage">Anime</Link>
+          <Link to="/HomePage" onClick={() => setShowFeatured(false)}>
+            Anime
+          </Link>
         </a>
       </h1>
       <SearchBar
@@ -41,10 +48,9 @@ export default function NavBar({
           setSort(sort == "asc" ? "desc" : "asc");
         }}
       >
-       
         <ArrowDownUp className="hover:cursor-pointer" />
       </button>
-      <h1 className="text-2xl">
+      <h1 className="text-2xl hover:scale-110 transition-all duration-300 ease-in-out bg-transparent">
         <Link to="/Profile">Profile</Link>
       </h1>
     </div>
