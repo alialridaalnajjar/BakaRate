@@ -1,5 +1,6 @@
 # BakaRate AnimeList
-
+Before I even started my coding journey i always had my notebook with some rating on it ,So why not make it 
+a website!! And thats why I made **BAKARATE**
 A modern, interactive anime listing and rating web app built with React, TypeScript, and Tailwind CSS.
 
 ![screenshot](./src/assets/BakaRateLoginPng.jpg)
@@ -73,17 +74,12 @@ src/
   types/         # TypeScript types
 ```
 
-## ✨ Screenshots
-
-> Add screenshots of your HomePage, Anime details, Login, etc. here!
 
 ## 🙋‍♂️ Author
 
 - [Ali Al Najjar](https://github.com/alialridaalnajjar)
 
-## 📄 License
 
-This project is licensed under the MIT License.
 
 ---
 
