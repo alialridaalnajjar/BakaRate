@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import img from "../assets/BakaRateLoginPng.png";
+import img from "../assets/BakaRateLoginPng.jpg";
 export default function CantLoginPage() {
   
   return (

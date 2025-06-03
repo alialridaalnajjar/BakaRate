@@ -19,7 +19,7 @@ export default function FeaturedNowCard({ animes }: FeaturedNowProps) {
     <div className="flex flex-row justify-center items-center">
       {x.map((anime) => (
         <div className=" mt-30 mb-30">
-          <h1 className="text-2xl font-semibold  ml-2 mb-2">Featured Now</h1>
+          <h1 className="text-2xl font-semibold text-white   ml-2 mb-2">Featured Now</h1>
 
           <div className=" h-138 w-240 rounded-3xl flex flex-row justify-end  bg-violet-500/20  backdrop-blur-lg object-fit  mask-r-to-violet-500/60  ">
            

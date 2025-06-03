@@ -1,31 +1,45 @@
 import React, { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import img from "../assets/BakaRateLoginPng.png";
+import img from "../assets/BakaRateLoginPng.jpg";
 import RejectLogin from "../components/RejectLogin";
+
+function LoadingOverlay() {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm gap-4 flex-col ">
+      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-purple-500 border-solid"></div>
+      <div className=" text-2xl  ">Setting the ratings up! </div>
+    </div>
+  );
+}
 
 export default function Login() {
   const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
   const [reject, setReject] = useState(false);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const passwordInputRef = useRef<HTMLInputElement>(null); // AL !?  
+  const passwordInputRef = useRef<HTMLInputElement>(null); // AL !?
 
   const loginCheck = () => {
     if (password.trim() === "123" && userName.trim() === "123") {
-      navigate("/HomePage");
-      setReject(false);
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+        navigate("/HomePage");
+        setReject(false); 
+      }, 3900); 
     } else {
       setReject(true);
     }
   };
-//AL ?
+  //AL ?
   const handleKeyDownUsername = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       passwordInputRef.current?.focus();
       e.preventDefault();
     }
   };
-//AL ?
+  //AL ?
   const handleKeyDownPassword = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       loginCheck();
@@ -34,10 +48,11 @@ export default function Login() {
 
   return (
     <div
-      className="h-screen bg-cover text-white  flex flex-row justify-center items-center "
+      className="h-screen bg-cover text-white flex flex-row justify-center items-center"
       style={{ backgroundImage: `url(${img})` }}
     >
-      <div className="h-108 w-112 mb-40  bg-purple-700/14 rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-20 shadow-lg shadow-black ">
+      {loading && <LoadingOverlay />}
+      <div className="h-108 w-112 mb-40 bg-purple-700/14 rounded-lg backdrop-filter backdrop-blur-sm bg-opacity-20 shadow-lg shadow-black ">
         <div className=" flex flex-col justify-center items-center p-3.5 text-2xl gap-10">
           <div className="gap-4 font-sans text-center">
             Baka<span className="text-purple-950 ">Rate</span>
@@ -65,13 +80,10 @@ export default function Login() {
               className="   bg-purple-600/2  w-60  h-9 rounded-lg border-black border p-1 hover:border-white"
               placeholder="Enter your password"
               onChange={(e) => setPassword(e.target.value)}
-
               onKeyDown={handleKeyDownPassword}
+              
             />
-              <div className="  mt-2">
-              {reject && <RejectLogin />}
-            </div>
-          
+            <div className="  mt-2">{reject && <RejectLogin />}</div>
           </div>
 
           <button

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import img from "../assets/BakaRateLoginPng.png";
+import img from "../assets/BakaRateLoginPng.jpg";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";

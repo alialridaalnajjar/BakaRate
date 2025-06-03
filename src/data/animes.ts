@@ -68,7 +68,7 @@ export const animes: CardProps[] = [
       "In a world where hunters with supernatural abilities fight deadly monsters, the weakest hunter, E-rank Sung Jin-Woo, is given a second chance at life after a near-death experience. He gains the ability to level up and become stronger, embarking on a journey to become the world's strongest hunter while uncovering dark secrets about the dungeons and the monsters within them.",
     background: "https://images6.alphacoders.com/132/thumb-1920-1320541.png",
     frame: "https://www.youtube.com/embed/YvGSK8mIlt8",
-    ft: "http://localhost:5173/BakaRate/src/assets/sololevelingimg.jpg",
+    ft: "https://images6.alphacoders.com/132/1320541.png",
   },
   {
     title: "Monster",

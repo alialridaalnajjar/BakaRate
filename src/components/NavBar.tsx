@@ -42,11 +42,12 @@ export default function NavBar({
         setShowFeatured={setShowFeatured}
       />
       <button
-        className="p-4 hover:text- hover:scale-110 transition-all duration-300 ease-in-out bg-transparent"
+        className="p-4 hover:cursor-pointer hover:scale-110 transition-all duration-300 ease-in-out bg-transparent"
         onClick={() => {
           console.log("sort clicked", sort);
           setSort(sort == "asc" ? "desc" : "asc");
-        }}
+          setShowFeatured(false);
+        }  } 
       >
         <ArrowDownUp className="hover:cursor-pointer" />
       </button>
